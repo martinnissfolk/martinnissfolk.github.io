@@ -1,0 +1,230 @@
+/* General Styles */
+body {
+    /* font-family: 'Pinyon Script', sans-serif; */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+
+    background-image: url('top_image_tablet.png'), url('footer_image_tablet.png');
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    /* background-attachment: fixed, fixed; */
+    background-size: 350px, 350px;
+    /* Adjust sizes as necessary */
+
+}
+
+/* Header Styles */
+header {
+    /* background-image: url('top_image_tablet.png');
+    background-size: cover;
+    background-position: left; */
+    /* background: red; */
+    color: #333;
+    padding: 1em 0;
+}
+
+.header-content h1 {
+    font-size: 2em;
+    color: #555;
+    margin-bottom: 0.5em;
+    font-weight: normal;
+}
+
+.header-content h2 {
+    font-size: 4em;
+    margin-bottom: 0.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Main Content Styles */
+main {
+    /* background-image: url('top_image_tablet.png'); */
+    text-align: center;
+    padding: 2em;
+}
+
+main img.landing {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer Styles */
+footer {
+    /* background: #f4f4f4; */
+    padding: 1em 0;
+    text-align: center;
+}
+
+ul.osa {
+    list-style-position: inside;
+}
+
+.fixed-width-image {
+    width: 76%;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .fixed-width-image {
+        width: auto;
+        /* Allows the image to scale down on small devices */
+    }
+}
+
+.plannification-container {
+
+    /* text-align: center; */
+    /* width: 45%;
+    max-width: 100%;
+    height: auto; */
+    /* This will center the images horizontally */
+}
+
+.plannification-container img {
+    display: inline-block;
+    text-align: center;
+    width: 45%;
+    height: auto;
+    max-width: 100%;
+    /* margin: 0;
+    padding: 0; */
+    vertical-align: bottom;
+    /* This will center the images horizontally */
+}
+
+.planification {
+    margin: 0;
+    padding: 0;
+    width: 45%;
+    display: inline-block;
+    /* display: inline-block; */
+    /* width: 45%;
+    max-width: 100%; */
+    height: auto;
+    /* display: block; */
+    /* This removes the default inline behavior which includes space for letters like 'g' and 'y' */
+    /* margin: 0; */
+    /* Remove margins */
+    /* padding: 0; */
+    /* Remove paddings */
+    vertical-align: bottom;
+    /* This aligns the images at the bottom, removing any space due to inline display */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .plannification-container {
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        /* This will center the images horizontally */
+    }
+
+    .planification {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.time-number {
+    font-size: 48px;
+    /* Adjust the size as needed */
+    color: #333;
+}
+
+.time-text {
+    font-size: 16px;
+    /* Adjust the size as needed */
+    color: #333;
+    text-transform: uppercase;
+}
+
+/* Info sections */
+
+.info-section {
+    display: flex;
+    align-items: flex-start;
+    /* Align items to the start of the flex container */
+    margin-bottom: 20px;
+    /* Space between sections */
+}
+
+.info-image {
+    flex: 0 0 150px;
+    /* Do not grow, do not shrink, start at 150px width */
+    margin-right: 20px;
+    /* Space between image and text */
+    width: 150px;
+    height: auto;
+}
+
+.info-content {
+    flex: 1;
+    /* Take up the remaining space */
+    text-align: left;
+}
+
+.info-content h2 {
+    margin: 0 0 10px 0;
+    /* Only margin-bottom */
+    font-size: 1.5em;
+    /* Adjust size as needed */
+}
+
+@media (max-width: 768px) {
+    .info-section {
+        flex-direction: column;
+        /* Stack image and content on smaller screens */
+    }
+
+    .info-image {
+        width: 100%;
+        /* Full width on smaller screens */
+        margin-right: 0;
+        /* No margin on the right of images on smaller screens */
+        margin-bottom: 10px;
+        /* Space between image and text */
+    }
+}
