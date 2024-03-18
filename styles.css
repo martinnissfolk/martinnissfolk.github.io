@@ -1,17 +1,14 @@
 /* General Styles */
 body {
-    font-family: 'Pinyon Script', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-
     background-image: url('top_image_tablet.png'), url('footer_image_tablet.png');
     background-position: top left, bottom right;
     background-repeat: no-repeat, no-repeat;
     /* background-attachment: fixed, fixed; */
     background-size: 350px, 350px;
     /* Adjust sizes as necessary */
-
 }
 
 /* Header Styles */
@@ -36,6 +33,10 @@ header {
     margin-bottom: 0.5em;
 }
 
+/* nav {
+    text-align: right;
+} */
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -47,9 +48,54 @@ nav ul li {
     margin: 0 1em;
 }
 
-nav ul li a {
+/* nav ul li a {
     text-decoration: none;
     color: #333;
+} */
+
+nav ul li a {
+    display: block;
+    /* Makes the entire area clickable */
+    padding: 10px 15px;
+    /* Button padding */
+    background-color: #99B083;
+    /* Button background color */
+    color: white;
+    /* Button text color */
+    text-decoration: none;
+    /* Removes underline from links */
+    border-radius: 5px;
+    /* Rounded corners */
+    transition: background-color 0.3s ease;
+    /* Smooth background color change on hover */
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #677F69;
+    /* Darker shade on hover/focus for better accessibility */
+}
+
+/* Responsive adjustments for screens that are 480px wide or less */
+@media (max-width: 480px) {
+    nav>ul {
+        flex-direction: column;
+        /* Stacks the links vertically */
+        align-items: center;
+        /* Centers the buttons */
+    }
+
+    nav ul li {
+        width: 100%;
+        /* Full width buttons */
+    }
+
+    nav ul li a {
+        text-align: center;
+        /* Centers the text */
+        padding: 15px;
+        /* Larger padding for easier tapping on mobile */
+    }
 }
 
 /* Main Content Styles */
@@ -227,4 +273,20 @@ ul.osa {
         margin-bottom: 10px;
         /* Space between image and text */
     }
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    margin-top: 10px;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
