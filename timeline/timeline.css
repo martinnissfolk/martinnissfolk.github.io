@@ -1,0 +1,53 @@
+.timeline {
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    width: 80%;
+    /* Adjust the width as necessary */
+    /* Optional: if you want a max-width or if it's too wide on large screens */
+    max-width: 260px;
+    margin: 0 auto;
+    margin-top: 20px;
+    /* This centers the .timeline div */
+    /* Adjust the max-width as necessary */
+}
+
+.event {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    /* Adjust as needed */
+}
+
+/* .event:not(:last-child)::after {
+    content: '';
+    display: block;
+    height: 20px;
+  
+    width: 2px;
+    background: black;
+    margin-left: 20px;
+} 
+*/
+
+.icon {
+    width: 50px;
+    /* Adjust as needed */
+    height: auto;
+    margin-right: 20px;
+}
+
+.connector {
+    width: 65px;
+    /* Adjust as needed */
+    height: auto;
+    margin-right: 20px;
+}
+
+p {
+    margin: 0;
+    font-family: 'Your font', sans-serif;
+    font-size: 16px;
+    /* Adjust as needed */
+}
