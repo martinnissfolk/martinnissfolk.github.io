@@ -58,7 +58,7 @@ nav ul li a {
     /* Makes the entire area clickable */
     padding: 10px 15px;
     /* Button padding */
-    background-color: #99B083;
+    background-color: rgba(153, 176, 131, 0.7);
     /* Button background color */
     color: white;
     /* Button text color */
@@ -72,7 +72,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a:focus {
-    background-color: #677F69;
+    background-color: rgba(103, 127, 105, 0.7);
     /* Darker shade on hover/focus for better accessibility */
 }
 
